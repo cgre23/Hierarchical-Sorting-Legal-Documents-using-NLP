@@ -19,9 +19,9 @@ It's important to note that the hierarchy may consist of multiple levels, meanin
 
 ## Solution
 
-1. Data imported
-2. Feature extraction: html tags are extracted to try to identify html tags for paragraphs and headers
-3. Data is vectorized and split into training and validation sets
+1. Data imported from the two json files.
+2. Feature extraction: html tags are extracted to try to identify html tags for paragraphs and headers.
+3. Data is vectorized and split into training and validation sets.
 3. Several classifiers are trained with and their performance is evaluated with the validation dataset.
 5. In the end the XGBoost Classifier is used on the test dataset to create the *test_data.json* file with indents.
 
@@ -32,4 +32,5 @@ The XGBoost model performs with an Accuracy of 0.96  and a Balanced Accuracy of 
 
 ## Improvements
 
-- Finetuning feature extraction and model parameters
+- Finetuning feature extraction and model parameters.
+- Predicting relative relationship rather than the numerical level.
